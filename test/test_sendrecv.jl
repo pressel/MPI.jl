@@ -12,9 +12,9 @@ src = mod(rank-1, size)
 
 N = 32
 
-send_mesg = Array(Float64, N)
-recv_mesg = Array(Float64, N)
-recv_mesg_expected = Array(Float64, N)
+send_mesg = Array(Complex128, N)
+recv_mesg = Array(Complex128, N)
+recv_mesg_expected = Array(Complex128, N)
 
 fill!(send_mesg, float64(rank))
 fill!(recv_mesg_expected, float64(src))
